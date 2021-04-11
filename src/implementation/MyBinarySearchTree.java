@@ -151,4 +151,15 @@ public class MyBinarySearchTree {
         }
         return false;
     }
+
+    public int heightOfTree(Node node){
+        int response = 0;
+        if(node == null){
+            response = -1;
+        }
+        else{
+            response = 1 + Math.max(heightOfTree(node.getLeft()), heightOfTree(node.getRight()));
+        }
+        return response;
+    }
 }

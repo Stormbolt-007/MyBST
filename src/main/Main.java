@@ -15,8 +15,8 @@ public class Main {
 
         bst.inOrder(bst.getRoot());
         System.out.println();
-        bst.delete(25);
-
-        bst.inOrder(bst.getRoot());
+//        bst.delete(25);
+//        bst.inOrder(bst.getRoot());
+        System.out.println(bst.heightOfTree(bst.getRoot()));
     }
 }
